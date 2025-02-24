@@ -13,14 +13,43 @@
         <a href="#" class="logo">MESSAGERIE</a>
         <ul>
             <li> <a href="#">lien1</a> </li>
-            <li> <a href="#">lien1</a> </li>
-            <li> <a href="#">lien1</a> </li>
+            <li> <a href="#">lien2</a> </li>
+            <li> <a href="#">lien3</a> </li>
             <li>
                 <button class="btn" id="displayForm">Se connecter</button>
             </li>
         </ul>
 
     </nav>
+
+    <section>
+        <div class="sec-container">
+            <div class="form-wrapper">
+                <div class="card">
+                    <div class="card-header">
+                        <div id="forLogin" class="form-header active">Se connecter</div>
+                        <div id="forRegister" class="form-header">S'incrire</div>
+                    </div>
+                    <div class="card-body" id="formContainer">
+                        <form id="formLogin">
+                            <input type="text" class="form-control" placeholder="@utilisatuer"/>
+                            <input type="password" class="form-control" placeholder="@Mot de passe"/>
+                            <button class="formbutton">Connexion</button>
+                        </form>
+                        <form id="formRegister" class="toggleForm">
+                            <input type="text" class="form-control" placeholder="@utilisatuer"/>
+                            <input type="password" class="form-control" placeholder="@Mot de passe"/>
+                            <input type="password" class="form-control" placeholder="@Confirmer mot de passe"/>
+                            <button class="formbutton">Inscription</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 </div>
 
 
