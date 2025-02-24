@@ -12,7 +12,8 @@
     height: 100vh;
     width: 100%;
     padding: 0 8%;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url(../image/th.jpg) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .4), transparent), url('../image/th.jpg') center no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -61,7 +62,8 @@ button.btn {
     background-color: transparent;
     color: #94f7e6;
     border: 1px solid transparent;
-    transition: border-color -3s;
+    transition: border-color .3s;
+    margin-top: 0;
 }
 
 button.btn:hover {
@@ -74,13 +76,13 @@ section {
     margin: 50px 0;
 }
 
-form-wrapper {
+.form-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: auto;
 }
-form-wrapper .card {
+.form-wrapper card {
     width: 360px;
     padding: 20px;
     background-color: rgb(0 0 0 /35%);
@@ -101,7 +103,7 @@ form-wrapper .card {
     font-size: 1.1rem;
     color: #94f7e6;
     box-shadow: 2px 3px 8px #d3f7ff71;
-    border-radius: 58px;
+    border-radius: 50px;
 }
 .card-header .form-header {
     flex: 50%;
@@ -109,19 +111,23 @@ form-wrapper .card {
     padding: 10px 0;
     user-select: none;
     cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid transparent;
 }
 
 .card-header .form-header .active {
-    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210 177 / 55%), inset 1px -1px 2px rgb(19 210 177 / 55%);
+    box-shadow: inset 1px 1px 2px rgb(19 210 177 / 55%), inset -1px 1px 2px rgb(19 210 177 / 55%), inset -1px -1px 2px rgb(19 210
+    177 / 55%),
+    inset 1px -1px 2px rgb(19 210 177 / 55%);
     border-color: #94f7e6;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color .3s, box-shadow .3s;
 }
 
 
 .card-body {
     display: flex;
     flex-wrap: nowrap;
-    padding: 40px;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -132,7 +138,7 @@ form {
 .toggleForm {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity .3s, visibility .3s;
 }
 
 .form-control {
@@ -157,7 +163,7 @@ form {
     border-radius: 50px;
     margin-top: 1rem;
     font-size: 1rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform .3s, box-shadow .3s;
 
 }
 
